@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Music Player</title>
+        <meta lang="en" overflow-x="hidden">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300, 400" rel="stylesheet">
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="player">
+            <div id="currentSong">
+                <div id="content">
+                    <!-- <img id="cover"> -->
+                    <button id="play"><img id="cover"></button>
+                    <audio id="song">
+                        <source type="audio/ogg" id="source">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p id="name"></p>
+                    <p id="author"></p>
+                    <div id="control">
+                        <button id="shuffle" class="uiElem"><img src="./assets/UI/shuffle.png"></button>
+                        <button id="before" class="uiElem"><img src="./assets/UI/before.png"></button>
+                        <!-- <button id="play"><img id = "playImg"></button> -->
+                        <button id="next" class="uiElem"><img src="./assets/UI/next.png"></button>
+                        <button id="stop" class="uiElem"><img src="./assets/UI/stop.png"></button>
+                    </div>
+                </div>
+            </div>
+            <div id="list">
+                <ol>
+                </ol>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
