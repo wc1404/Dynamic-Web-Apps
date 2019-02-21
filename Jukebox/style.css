@@ -67,6 +67,8 @@ button{
     height: auto;
 }
 
+button:focus {outline:0;}
+
 img{
     height: auto;
 }
@@ -111,7 +113,7 @@ li.playing{
 }
 
 .spin {
-  animation: spin 6s linear 0s infinite normal;
+  animation: spin 18s linear 0s infinite normal;
 }
 
 .spinPause {

@@ -59,13 +59,6 @@ class Jukebox{
             }
         }
 
-        //update play button
-        if(this.currentSongIsPlaying){
-            //this.buttons.playImg.src = "./assets/UI/play.png";
-        }else{
-            //this.buttons.playImg.src = "./assets/UI/pause.png";
-        }
-
         this.songPosition.load();
     }
 
@@ -112,7 +105,6 @@ class Jukebox{
 
         this.buttons.playBtn.addEventListener("click", ()=>{
             this.play();
-
         });
 
         this.buttons.nextBtn.addEventListener("click", ()=>{
@@ -138,10 +130,11 @@ class Jukebox{
         }
 
         this.currentSongIsPlaying = false;
+        this.coverPosition.classList.add('spinPause');
+        this.coverPosition.classList.remove('spin');
         this.currentSongIndex = 0;
 
         //setup
-
         this.update();
         this.updateList();
     }
@@ -318,8 +311,15 @@ const buttons = {
 const pandamonium = new Jukebox(songList, buttons, positions);
 
 const toThisSong = (e) => {
-    const index = e.target.id;
+    const index = parseInt(e.target.id);
     pandamonium.toThisSong(index);
 }
+
+songPosition.onended = function() {
+    console.log("Song Ended, Moving On");
+    pandamonium.stop();
+    pandamonium.toNext();
+    pandamonium.play();
+};
 
 pandamonium.setup();
