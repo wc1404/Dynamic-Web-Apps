@@ -3,7 +3,7 @@
 ##### Dependencies:
 + node
 + Twit: Install using `npm install Twit`
-+ Twitter API Key from <developer.twitter.com>
++ Twitter API Key from <https://developer.twitter.com>
 
 How to use:
 1. Install node and Twit
