@@ -1,0 +1,14 @@
+{
+  "name": "tweeterbot",
+  "version": "1.0.0",
+  "description": "A bot for Twitter",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wilfredo Cueto",
+  "license": "ISC",
+  "dependencies": {
+    "twit": "^2.2.11"
+  }
+}
