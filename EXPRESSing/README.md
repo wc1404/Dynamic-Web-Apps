@@ -6,4 +6,4 @@ How To Use
 ==========
 * Need to have express and node installed
 * cd into the directory where your app is located
-* run node APPNAMEHERE.js
+* run `node APPNAMEHERE.js`

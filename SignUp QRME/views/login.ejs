@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>QRME</title>
+	</head>
+	<body>
+		<div>
+			<fieldset>
+				<p><%= locals.error %></p>
+				<form action="/appLogin" method="post">
+					<p>Username</p>
+					<input name="Username" type="text" placeholder="Something Cool or not..." required>
+					<p>Password</p>
+					<input name="Password" type="text" placeholder="Something Secret or not...">
+
+					<input type="submit" value="Login">
+				</form>
+			</fieldset>
+		</div>
+	</body>
+</html>
